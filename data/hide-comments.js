@@ -17,4 +17,4 @@ for(var i = 0; i < profileLinks.length; ++i){
 		}
 	}
 }
-console.error("@@@ nuked ", +cnt + " noobs.")
+//console.error("@@@ nuked " +cnt + " noobs.")
