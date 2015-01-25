@@ -1,0 +1,10 @@
+a.profileLink
+{
+	color: #333;
+	background-color: #0c0;
+	animation: profilelinkanim 1s ease 3;
+}
+
+@keyframes profilelinkanim {
+	50% { opacity: 0; }
+}
