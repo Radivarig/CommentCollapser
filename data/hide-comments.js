@@ -24,11 +24,9 @@ var HideCommentOfProfileLink = function(p){
 	}
 }
 
-var HideComments = function(){
-  var profileLinks = document.getElementsByClassName("profileLink")
+var profileLinks = document.getElementsByClassName("profileLink")
   for(var i = 0; i < profileLinks.length; ++i)
     HideCommentOfProfileLink(profileLinks[i])
-}
 
 var cb = function(event){
 	if (event.animationName === 'profilelinkanim')
