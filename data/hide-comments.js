@@ -1,11 +1,5 @@
 //TODO remove comments of removed comment
 
-/*var l = document.createElement("style")
-l.setAttribute("rel", "stylesheet")
-l.setAttribute("type", "text/css")
-l.setAttribute("href", chrome://url/to/anims.css) //TODO setup chrome.manifest
-document.getElementsByTagName("head")[0].appendChild(l)*/
-
 var css = 'a.profileLink { color: #333;	background-color: #0c0;	animation: profilelinkanim 1s ease 3; } @keyframes profilelinkanim { 50% { opacity: 0; } }'
 var head = document.head
 var style = document.createElement('style')
@@ -39,17 +33,3 @@ var cb = function(event){
 		HideCommentOfProfileLink(event.target)
 }
 document.body.addEventListener('animationstart', cb, false)
-
-/*
-var observer = new MutationObserver( cb )
-
-var target = document.body
-var config = {
-	childList: true
-	,attributes: true
-	,subtree: true
-	,attributeFilter: ["UFIList"]
-}
-
-observer.observe(target, config)
-//observer.disconnect()*/
