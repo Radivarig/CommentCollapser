@@ -1,6 +1,6 @@
 //TODO remove comments of removed comment
 
-var css = 'a.profileLink { color: #333;	background-color: #0c0;	animation: profilelinkanim 1s ease 3; } @keyframes profilelinkanim { 50% { opacity: 0; } }'
+var css = 'a.profileLink { animation: profilelinkanim; } @keyframes profilelinkanim {} }'
 var head = document.head
 var style = document.createElement('style')
 style.type = 'text/css'
