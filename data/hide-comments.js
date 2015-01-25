@@ -1,5 +1,3 @@
-//TODO remove comments of removed comment
-
 var css = 'a.profileLink { animation: profilelinkanim; } @keyframes profilelinkanim {} }'
 var head = document.head
 var style = document.createElement('style')
@@ -15,8 +13,12 @@ var HideCommentOfProfileLink = function(p){
 	if (hasClass (p.parentNode, "UFICommentBody")){
 	  p = p.parentNode.parentNode
 	  while (p) {
-	    if ( hasClass (p, "UFIComment") && p.style.display != "none")
+	    if ( hasClass (p, "UFIComment") && p.style.display != "none"){
 	      p.style.display = "none"
+	      if (p.nextElementSibling.tagName === "UL")
+	      	p.nextElementSibling.style.display = "none"
+	    	break
+	    }
 	    p = p.parentNode
 	  }
 	}
