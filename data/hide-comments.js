@@ -1,4 +1,5 @@
-var css = 'a.profileLink { animation: profilelinkanim; } @keyframes profilelinkanim {} }'
+var css = 'a.profileLink { animation: profilelinkanim; } @keyframes profilelinkanim { } \
+.UFIDetected:not(:hover) { overflow: hidden; height: 1px; }'
 var head = document.head
 var style = document.createElement('style')
 style.type = 'text/css'
@@ -13,10 +14,14 @@ var HideCommentOfProfileLink = function(p){
 	if (hasClass (p.parentNode, "UFICommentBody")){
 	  p = p.parentNode.parentNode
 	  while (p) {
-	    if ( hasClass (p, "UFIComment") && p.style.display != "none"){
-	      p.style.display = "none"
-	      if (p.nextElementSibling.tagName === "UL")
-	      	p.nextElementSibling.style.display = "none"
+	    if ( hasClass (p, "UFIComment")){
+	    	//p.style.display = "none"
+	      p.className += " UFIDetected"
+
+	      if (p.nextElementSibling.tagName === "UL"){
+	    		//p.nextElementSibling.style.display = "none"
+	      	p.appendChild(p.nextElementSibling)
+	      }
 	    	break
 	    }
 	    p = p.parentNode
