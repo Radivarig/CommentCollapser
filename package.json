@@ -1,8 +1,8 @@
 {
-  "name": "commentnuker",
-  "title": "Comment Nuker",
+  "name": "commentcollapser",
+  "title": "Comment Collapser",
   "id": "jid1-fd8MU6ExSQoVCQ",
-  "description": "Hide facebook comments containing tagged people.",
+  "description": "Collapse (hide) facebook comments containing tagged people.",
   "author": "Reslav Hollos",
   "license": "MPL 2.0",
   "version": "1.0"
