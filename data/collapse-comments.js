@@ -1,5 +1,5 @@
 var css = 'a.profileLink { animation: profilelinkanim; } @keyframes profilelinkanim { } \
-.UFIDetected:not(:hover) { overflow: hidden; height: 1px; }'
+.UFIDetected:not(:hover) { overflow: hidden; height: 0px; }'
 var head = document.head
 var style = document.createElement('style')
 style.type = 'text/css'
@@ -14,7 +14,7 @@ var HideCommentOfProfileLink = function(p){
 	if (hasClass (p.parentNode, "UFICommentBody")){
 	  p = p.parentNode.parentNode
 	  while (p) {
-	    if ( hasClass (p, "UFIComment")){
+	    if ( hasClass (p, "UFIComment") && !hasClass(p.parentNode, "UFIReplyList") ){
 	      p.className += " UFIDetected"
 
 	      if (p.nextElementSibling.tagName === "UL"){
