@@ -24,4 +24,4 @@ var cb = function(event){
 	if (event.animationName === 'profilelinkanim')
 		HideCommentOfProfileLink(event.target)
 }
-document.body.addEventListener('animationstart', cb, false)
+document.body.addEventListener('webkitAnimationIteration', cb, false)
