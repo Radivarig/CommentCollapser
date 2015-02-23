@@ -1,11 +1,3 @@
-var css = 'a.profileLink { animation: profilelinkanim; } @keyframes profilelinkanim { } \
-.UFIDetected:not(:hover) { overflow: hidden; height: 0px; }'
-var head = document.head
-var style = document.createElement('style')
-style.type = 'text/css'
-style.appendChild(document.createTextNode(css))
-head.appendChild(style)
-
 var hasClass = function(element, cls){
   return (' ' +element.className +' ').indexOf(' ' +cls +' ') > -1
 }
