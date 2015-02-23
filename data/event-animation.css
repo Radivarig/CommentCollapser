@@ -1,0 +1,15 @@
+@-webkit-keyframes profilelinkanim {
+	from {color: #000;}
+    to {color: #001;}
+}
+
+a.profileLink:not(.pLinkDetected) {
+	-webkit-animation-name: profilelinkanim;
+	-webkit-animation-duration: 0.1s;
+	-webkit-animation-iteration-count: infinite;
+}
+
+.UFIDetected:not(:hover) {
+	overflow: hidden;
+	height: 0px;
+}
