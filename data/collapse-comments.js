@@ -3,6 +3,7 @@ var hasClass = function(element, cls){
 }
 
 var HideCommentOfProfileLink = function(p){
+	p.className += " pLinkDetected"
 	if (hasClass (p.parentNode, "UFICommentBody")){
 	  p = p.parentNode.parentNode
 	  while (p) {
