@@ -4,6 +4,7 @@
 , "manifest_version": 2
 , "author": "Reslav Hollos"
 , "description": "Collapse (hide) facebook comments containing tagged people."
+, "icons": { "64": "icon.png" }
 , "permissions": [ "activeTab" ]
 , "background": {
     "scripts": [ "data/background.js" ]
